@@ -28,9 +28,9 @@ public class B_10951 {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             bw.write(a+b+"\n");
+            bw.flush(); // 밖으로 빼내면 실행안됨
         }
         br.close();
-        bw.flush();
         bw.close();
     }  
     
